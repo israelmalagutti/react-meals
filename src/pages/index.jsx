@@ -1,12 +1,10 @@
 import FoodThinking from "../assets/foodThinking.svg";
 
-import { Header, Footer } from "../components";
+import { Layout } from "../layouts";
 
 export default function LandingPage() {
   return (
-    <>
-      <Header actions={{ cartButton: false, shopButton: true }} />
-
+    <Layout headerActions={{ cartButton: false, shopButton: true }}>
       <div className="w-full flex flex-col flex-auto gap-3 items-center justify-center">
         <img
           src={FoodThinking}
@@ -22,8 +20,6 @@ export default function LandingPage() {
           </button>
         </div>
       </div>
-
-      <Footer />
-    </>
+    </Layout>
   );
 }
