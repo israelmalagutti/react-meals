@@ -1,9 +1,11 @@
-import LandingPage from "./pages/index";
+// import LandingPage from "./pages/index";
+import HomePage from "./pages/Home";
 
 function App() {
   return (
-    <div className="h-screen w-screen flex flex-col bg-white dark:bg-black font-display">
-      <LandingPage />
+    <div className="h-full w-full flex flex-col bg-white dark:bg-black dark:text-white font-display">
+      {/* <LandingPage /> */}
+      <HomePage />
     </div>
   );
 }
