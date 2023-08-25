@@ -5,7 +5,7 @@ import { Layout } from "../layouts";
 export default function LandingPage() {
   return (
     <Layout headerActions={{ cartButton: false, shopButton: true }}>
-      <div className="w-full flex flex-col flex-auto gap-3 items-center justify-center">
+      <main className="w-full flex flex-col flex-auto gap-3 items-center justify-center">
         <img
           src={FoodThinking}
           alt="Person grocery shopping"
@@ -19,7 +19,7 @@ export default function LandingPage() {
             Order now!
           </button>
         </div>
-      </div>
+      </main>
     </Layout>
   );
 }
