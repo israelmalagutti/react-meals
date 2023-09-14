@@ -1,23 +1,23 @@
 import { useState } from "react";
 
 export function useCartModal() {
-  const [showCart, setShowCart] = useState();
+  const [showCart, setShowCart] = useState(false);
   const [cartItems, setCartItems] = useState([]);
 
   // const addItem = useMemo(() => {}, [cartItems]);
 
   // const removeItem = useMemo(() => {}, [cartItems]);
 
-  // const incrementItemQuantity = useCallback(() => {}, [cartItems]);
+  // const incrementItemQuantity = useCallback((itemId) => {}, [cartItems]);
 
-  // const decrementItemQuantity = useCallback(() => {}, [cartItems]);
+  // const decrementItemQuantity = useCallback((itemId) => {}, [cartItems]);
 
   function openCart() {
     setShowCart(true);
   }
 
   function closeCart() {
-    setShowCart(true);
+    setShowCart(false);
   }
 
   return {
