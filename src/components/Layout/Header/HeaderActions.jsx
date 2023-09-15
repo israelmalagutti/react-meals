@@ -10,8 +10,7 @@ export function HeaderActions({ shopButton, cartButton }) {
     cartButton ? (
       <button
         onClick={openCart}
-        aria-description="Button that opens the cart"
-        className="relative py-3 px-4 bg-green-500 hover:bg-green-400 shadow-lg hover:shadow-[0_0_16px_rgba(0,0,0,0.25)] hover:shadow-green-500 dark:bg-green-600 dark:hover:bg-green-500 text-white dark:text-black font-semibold rounded-md transition-colors"
+        className="relative py-3 px-4 bg-green-500 hover:bg-green-400 shadow-lg hover:shadow-glow hover:shadow-green-500 dark:bg-green-600 dark:hover:bg-green-500 text-white dark:text-black font-semibold rounded-md transition-colors"
       >
         <ShoppingCart size={24} />
 
